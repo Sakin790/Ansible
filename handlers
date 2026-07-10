@@ -1,0 +1,1 @@
+Handlers হলো special tasks যেগুলো শুধু তখনই চলে যখন কোনো task তাদের notify করে, আর task এ কোনো change হয় (idempotent হলে skip হয়)।

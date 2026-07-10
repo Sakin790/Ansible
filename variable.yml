@@ -1,0 +1,7 @@
+- hosts: managed_nodes
+  vars:
+    app_name: myapp
+  tasks:
+    - name: Use variable
+      debug:
+        msg: "Deploying {{ app_name }}"

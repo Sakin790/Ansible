@@ -1,0 +1,6 @@
+- hosts: managed_nodes
+  tasks:
+    - name: Overwrite existing file
+      copy:
+        content: "New content here added to file and configuraion is changed\n"
+        dest: /tmp/hello.txt

@@ -1,0 +1,11 @@
+- hosts: managed_nodes
+  tasks:
+    - name: Create a file
+      file:
+        path: /tmp/testfile.txt
+        state: touch
+
+    - name: Create file with content
+      copy:
+        content: "Hello from Ansible\n"
+        dest: /tmp/hello.txt
