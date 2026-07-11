@@ -1,0 +1,11 @@
+---
+- name: Basic server info
+  hosts: my-nodes
+  tasks:
+    - name: Check disk usage
+      command: df -h
+      register: disk_output
+
+    - name: Show disk usage
+      debug:
+        var: disk_output.stdout_lines
